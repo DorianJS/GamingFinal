@@ -18,7 +18,7 @@ class Star {
     sd= random(5, 25);
   }
   void draw() {
-    fill(#FFFFFF);
-    ellipse(sx, sy, d, d);
+    fill(#990000);
+    ellipse(100, 100, 10, 10);
   }
 }

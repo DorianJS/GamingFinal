@@ -27,11 +27,6 @@ void setup() {
     f[q] = new Foe(fx, fy, random(-5, 5), random(5, 15));
 
 
-    for (int r = 0; r < f.length; r++) {
-
-      if (dist(Player.px, Player.py, Foe[q].fx, Foe[q].fy) < 40) {
-        hbs -= 50 ;
-      }
     }
 
 
@@ -42,7 +37,7 @@ void setup() {
     py = 500;
     bg = loadImage("Background.jpg");
   }
-}
+
 
 
 void draw() {
