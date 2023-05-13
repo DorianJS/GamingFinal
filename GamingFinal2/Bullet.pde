@@ -1,8 +1,2 @@
-class Bullet{
-  
-  
-  
-  
-  
-  
+class Bullet {
 }

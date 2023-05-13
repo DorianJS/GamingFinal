@@ -1,34 +1,24 @@
-class Star{
- 
-  float x;
-  float y;
-  float d; 
-  
-  
-  
-  
-  Star(){
-    
-    x = random(width);
-    y = random(height);
-    d = 5; 
-   }
-  
-  void display(){
-    fill(#FFFFFF);
-    circle(x,y,d);
-    
+
+float x;
+float y;
+float d;
+
+class Star {
+
+
+
+  Star(float sx, float sy, float sd) {
+
+    x = sx;
+    y= sy;
+    d= sd;
+
+    sx = random(1, 800);
+    sy = random(1, 600);
+    sd= random(5, 25);
   }
-  
-  
-  
-  
-  
-  
-  
+  void draw() {
+    fill(#FFFFFF);
+    ellipse(sx, sy, d, d);
+  }
 }
-
-  
-  
-
- 

@@ -1,3 +1,2 @@
-class planets{
-  
+class planets {
 }
