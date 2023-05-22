@@ -5,7 +5,7 @@ class Player {
 
   Player(float px, float py) {
     Dog = loadImage("rocket.png");
-    x  =px;
+    x=px;
     y = py;
   }
 
@@ -17,3 +17,17 @@ class Player {
      
     }
   }
+ 
+
+   
+   
+   
+   
+ 
+    
+    
+    
+    
+    
+    
+ 

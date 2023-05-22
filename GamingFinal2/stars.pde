@@ -1,6 +1,5 @@
 
-float x;
-float y;
+
 float d;
 
 class Star {

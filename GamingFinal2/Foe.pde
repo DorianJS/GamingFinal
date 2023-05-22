@@ -1,35 +1,45 @@
 class Foe {
-  float x;
-  float y;
-  float xv;
-  float yv;
+  float x, y;
+  float size;
+  float speed;
+
   PImage FImage;
-  Foe(float fx, float fy, float fxv, float fyv) {
-    this.x = fx;
-    this.y =fy;
-    this.xv = fxv;
-    this.yv = fyv;
+  Foe( float startX, float startY, float FoeSize, float FoeSpeed) {
 
 
 
-
-
+    x = startX;
+    y = startY;
+    size = FoeSize;
+    speed = FoeSpeed;
     FImage= loadImage("alien1.png");
-    yv = random(3, 9);
-    x = random(10, 750);
-    y = 10;
   }
-  void draw() {
-    y = y + yv;
-    x =x + xv;
-    image(FImage, x, y);
-    if (dist(fx, fy, px, py)<=400) {
-      hbs -=50;
+
+
+
+  void update() {
+
+    y+=speed;
+
+    if (y > height) {
+      reset();
     }
+  }
+
+  void display() {
+ 
+    image(FImage, x, y);
+
 
     if (y >= 550) {
       y = random(10, 50);
       x = random(10, 750);
     }
+  }
+
+  void reset() {
+
+    x = random(width - size);
+    y = -size;
   }
 }
